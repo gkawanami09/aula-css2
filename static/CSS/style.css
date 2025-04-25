@@ -1,0 +1,24 @@
+/* Reset simplificado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Remover estilos padrão de listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Links sem sublinhado */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  
+header {
+    background-color: #8DF691;
+}
