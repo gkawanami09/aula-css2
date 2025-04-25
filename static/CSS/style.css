@@ -1,24 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Reset simplificado */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
-  
   /* Remover estilos padrão de listas */
   ul, ol {
     list-style: none;
   }
-  
   /* Links sem sublinhado */
   a {
     text-decoration: none;
     color: inherit;
   }
 
-
   
-header {
+  header {
     background-color: #8DF691;
-}
+    text-align: center;
+    padding: 12px;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav a {
+    color: black; /*cor do texto*/
+    text-transform: uppercase; /*transforma o texto para letra maiuscula*/
+    padding: 0px 10px; /*espaçamento - 0px na vertical - 10px na horizontal*/
+  }
+
+  .banner   {
+    background-image: url(../Img/fundo.png); /*esta importando a imagem para usar no plano de fundo*/
+    background-position: center; /*fundo alinhado no centro*/
+    background-size: cover; /*tamanho do fundo - cover: faz com que ele ocupe o espaço na horizontal -- contain: faz a imagem se adaptar para ocupar o eixo y */
+    background-repeat: no-repeat; /*faz com que o fundo não se repita independento do espaço*/
+    background-color: #ffffc6; /*cor de fundo*/
+
+    text-align: center; /*alinhar o texto no centro*/
+    padding-top: 100px; /*espaço interno, porem apenas em cima*/
+    height: 400px; /*altura da div*/
+  }
+  .banner h1 {
+    font-size: 2.5em; /*tamanho da fonte - em é um tamanho universal*/
+    letter-spacing: 0.1em /*espaço entre as letras*/
+    ;
+  }
+  .banner a {
+    display: inline-block; /*continue em linha, porem consegue ter uma margem*/
+    margin-top: 20px;  /*inline apenas na parte de cima ---- display:none serve para tirar o elemento da tela*/
+    padding: 10px 20px;  /*espaço interno da div*/
+    background-color: #f9f981; /*cor de fundo*/
+    font-size: 1.5em; /*tamanho da fonte - em é um tamanho universal*/
+    border-radius: 20px; /*bordas arredondadas*/
+
+  }
