@@ -1,58 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Reset simplificado */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
-  /* Remover estilos padrão de listas */
-  ul, ol {
-    list-style: none;
-  }
-  /* Links sem sublinhado */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.3s;
+}
 
-  
-  header {
-    background-color: #8DF691;
-    text-align: center;
-    padding: 12px;
-  }
-  header nav {
-    margin-top: 10px;
-  }
-  header nav a {
-    color: black; /*cor do texto*/
-    text-transform: uppercase; /*transforma o texto para letra maiuscula*/
-    padding: 0px 10px; /*espaçamento - 0px na vertical - 10px na horizontal*/
-  }
+body {
+  background-color: #ffffc6;
+}
 
-  .banner   {
-    background-image: url(../Img/fundo.png); /*esta importando a imagem para usar no plano de fundo*/
-    background-position: center; /*fundo alinhado no centro*/
-    background-size: cover; /*tamanho do fundo - cover: faz com que ele ocupe o espaço na horizontal -- contain: faz a imagem se adaptar para ocupar o eixo y */
-    background-repeat: no-repeat; /*faz com que o fundo não se repita independento do espaço*/
-    background-color: #ffffc6; /*cor de fundo*/
+/* Links */
+a {
+  text-decoration: none;
+  color:black;
+}
 
-    text-align: center; /*alinhar o texto no centro*/
-    padding-top: 100px; /*espaço interno, porem apenas em cima*/
-    height: 400px; /*altura da div*/
-  }
-  .banner h1 {
-    font-size: 2.5em; /*tamanho da fonte - em é um tamanho universal*/
-    letter-spacing: 0.1em /*espaço entre as letras*/
-    ;
-  }
-  .banner a {
-    display: inline-block; /*continue em linha, porem consegue ter uma margem*/
-    margin-top: 20px;  /*inline apenas na parte de cima ---- display:none serve para tirar o elemento da tela*/
-    padding: 10px 20px;  /*espaço interno da div*/
-    background-color: #f9f981; /*cor de fundo*/
-    font-size: 1.5em; /*tamanho da fonte - em é um tamanho universal*/
-    border-radius: 20px; /*bordas arredondadas*/
+/* Cabeçalho */
+header {
+  background-color: #8DF691;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
 
-  }
+header img {
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  padding: 6px 14px;
+  border: 2px solid #f9f981;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #f5f5ad;
+}
+
+header nav a:hover {
+  background-color: #f9f981;
+}
+
+/* Banner */
+.banner {
+  background-image: url(../Img/fundo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffc6;
+  text-align: center;
+  padding: 80px 20px;
+  height: 350px;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.banner a {
+  padding: 10px 20px;
+  background-color: #f9f981;
+  font-size: 1.2em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.banner a:hover {
+  background-color: #8DF691;
+  transform: scale(1.1);
+}
+
+/* Nossos Serviços */
+.servicos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.caixas-servicos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.servico {
+  background-color: #ffffff;
+  border: 2px solid #f9f981;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.servico h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 1em;
+  color: #444;
+}
+
+/* Rodapé */
+footer {
+  background-color: #8DF691;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+}
